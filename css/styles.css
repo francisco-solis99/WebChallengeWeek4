@@ -54,11 +54,11 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-
+    padding: 10%;
 }
 
 .testimonie__image-wrapper{
-    width: 80%;   
+    width: 100%;   
 }
 
 .testimonie__image{
