@@ -19,9 +19,16 @@ const SLIDES = [
 
     }
 ]
-
-
 // console.log(SLIDES[0].texto)
+
+
+// DOM Elements
+const principalText = document.getElementById('testimonie');
+const person = document.getElementById('name');
+const jobPerson = document.getElementById('job');
+const buttonNext = document.getElementById('next') ; 
+const buttonPrev =  document.getElementById('prev');
+// console.log(principalText, person, jobPerson, buttonNext, buttonPrev);
 
 
 
