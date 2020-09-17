@@ -80,6 +80,14 @@ body{
     width: 10px;
 }
 
+.button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+
 .testimonie__info{
     /* background-color: teal; */
     text-align: center;
