@@ -93,18 +93,12 @@ body{
     padding-top: 35px;
     font-size: 1.8rem;
     color: hsl(240, 38%, 20%);
-    font-weight: 500;
-}
-
-.testimonie__person{
-    /* background-color: wheat; */
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 4rem;
+    font-weight: 300;
 }
 
 .testimonie__name{
     font-size: 1.4em;
+    margin-top: 1em;
     font-weight: 700;
     color: hsl(240, 38%, 20%);
 }
@@ -113,4 +107,82 @@ body{
     font-size: 1.2em;
     font-weight: 300;
     color: hsl(240, 18%, 77%);
+}
+
+@media screen and (min-width:1024px){
+    
+    body{
+        background-size: 30%;
+    
+    }
+
+    .testimonies-wrapper{
+        /* background-color: turquoise; */
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    .testimonie{
+        /* background-color: springgreen; */
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        grid-template-areas: "description visual";
+        gap: 0;
+    }
+    
+    .testimonie__visual{
+        /* background-color: steelblue; */
+        padding: 11%;
+        width: 100%;
+        grid-area: visual;
+    }
+    
+    .testimonie__buttons{
+        width: 7em;
+        padding: 1em;
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+    }
+
+    .testimonie__info{
+        /* background-color: salmon; */
+        background-position-x: 28%;
+        background-position-y: 29%;
+        background-size: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        grid-area: description;
+        padding-left: 12%;
+        margin-right: -22%;
+        z-index: 99;
+    }
+    
+    .testimonie__text{
+        padding-top: 12%;
+        font-size: 3rem;
+    }
+
+    .testimonie__person{
+        display: flex;
+        align-items: center;
+        margin-top: 2.5em;
+    }
+    
+    .testimonie__name{
+        font-size: 1.6rem;
+        margin: 0;
+        margin-right:.5em;
+    }
+    
+    .testimonie__job{
+        font-size: 1.4rem;
+    }
+    
+    
 }
