@@ -54,6 +54,19 @@ body{
     position: relative;
     padding: 10%;
     width: 90%;
+    animation: toDown 1000ms ease-in-out;
+}
+
+@keyframes toDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 .testimonie__image-wrapper{
@@ -95,7 +108,21 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     background-size: 70px;
+    animation: toRight 1000ms ease-in-out;
 }
+
+@keyframes toRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
 
 .testimonie__text{
     padding-top: 35px;

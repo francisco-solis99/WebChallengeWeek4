@@ -43,14 +43,14 @@ n = 0;
 function nextSlide(){
     if(SLIDES[n+1]){
         n+=1;
-        fillInfo()
+        fillInfo();
     }
 }
 
 function prevSlide(){
     if(SLIDES[n-1]){
         n-=1;
-        fillInfo()
+        fillInfo();
     }
 }
 
@@ -59,6 +59,10 @@ function fillInfo(){
     person.innerText=SLIDES[n].name;
     jobPerson.innerText=SLIDES[n].job;
     image.src = SLIDES[n].src;
+    image.style.animation = "toDown 1000ms ease-in-out"
+    principalText.style = "toRight 1000ms ease-in-out"
+    
+    
 }
 
 window.addEventListener('keyup', (e) => {
