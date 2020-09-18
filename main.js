@@ -61,7 +61,16 @@ function fillInfo(){
     image.src = SLIDES[n].src;
 }
 
+window.addEventListener('keyup', (e) => {
 
+        if(e.key === 'ArrowRight'){
+            nextSlide()
+        }
+        else if(e.key === 'ArrowLeft'){
+            prevSlide()
+        }
+    }
+) 
 
 
 
